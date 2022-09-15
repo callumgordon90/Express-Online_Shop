@@ -1,5 +1,5 @@
 const express = require('express');
-//const faker = require ('faker');
+const faker = require ('@faker-js/faker');
 const app = express();
 const port = 3000;
 
@@ -11,7 +11,7 @@ app.get('/nueva-ruta', (req, res) => {
   res.send('Hola, soy una nueva ruta');
 });
 
-/*app.get('/products', (req, res) => {
+app.get('/products', (req, res) => {
   const products = [];
   for (let index = 0; index < 100; index++) {
     products.push({
@@ -21,7 +21,7 @@ app.get('/nueva-ruta', (req, res) => {
     });
   }
   res.json(products);
-});*/
+});
 
 app.get('/products/:id', (req, res) => {
   const {id} = req.params;
