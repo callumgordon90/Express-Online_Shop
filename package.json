@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/callumgordon90/Online_Shop/issues"
   },
-  "homepage": "https://github.com/callumgordon90/Online_Shop#readme"
+  "homepage": "https://github.com/callumgordon90/Online_Shop#readme",
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
 }
