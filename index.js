@@ -11,9 +11,12 @@ app.get('/nueva-ruta', (req, res) => {
   res.send('Hola, soy una nueva ruta');
 });
 
+//This endpoint is broken and I dont know why
 app.get('/products', (req, res) => {
   const products = [];
-  for (let index = 0; index < 100; index++) {
+  const { size } = req.query;
+  const limit = size || 10;
+  for (let index = 0; index < limit; index++) {
     products.push({
       name: faker.commerce.productName(),
       price: parseInt(faker.commerce.price(), 10),
@@ -21,6 +24,10 @@ app.get('/products', (req, res) => {
     });
   }
   res.json(products);
+});
+
+app.get('/products/filter', (req, res) => {
+  res.send('Yo soy un filter');
 });
 
 app.get('/products/:id', (req, res) => {
