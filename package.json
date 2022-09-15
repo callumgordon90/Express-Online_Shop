@@ -1,0 +1,22 @@
+{
+  "name": "online_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callumgordon90/Online_Shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callumgordon90/Online_Shop/issues"
+  },
+  "homepage": "https://github.com/callumgordon90/Online_Shop#readme"
+}
