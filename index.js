@@ -1,7 +1,15 @@
+// this dependency is not necessary in this file at the moment:
+// const faker = require ('@faker-js/faker');
+
 const express = require('express');
-const faker = require ('@faker-js/faker');
+const routerApi = require('./routes');
+
 const app = express();
 const port = 3000;
+
+
+
+routerApi(app);
 
 app.get('/', (req, res) => {
   res.send('Hola mi server en express');
