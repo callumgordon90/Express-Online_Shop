@@ -21,17 +21,8 @@ router.get('/filter', (req, res) => {
 
 router.get('/:id', (req, res) => {
   const {id} = req.params;
-  if (id === 999) {
-    res.status(404).json({
-      message: 'not found'
-    });
-  } else {
-    res.status(200).json({
-      id,
-      name: 'Product 2',
-      price: 2000
-    });
-  }
+  const product = service.findOne(id);
+  res.json(product);
 });
 
 
