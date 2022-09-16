@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 
-app.get('/users', (req, res) => {
+router.get('/users', (req, res) => {
   const {limit, offset} = req.query;
   if (limit && offset) {
     res.json({
